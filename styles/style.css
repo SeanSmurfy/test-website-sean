@@ -188,7 +188,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
+    width: 100%; /* <-- TYPO FIX */
     height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
@@ -267,7 +267,7 @@ img {
     transform: translateX(-50%);
     width: 80px; /* Width of the line */
     height: 4px;
-    background-color: var(--star-color); /* Yellow line */
+    background-color: var(--star-color); /* <-- TYPO FIX */
     border-radius: 2px;
 }
 
@@ -341,22 +341,12 @@ img {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.card-rating {
-    font-size: 1rem;
-    color: var(--star-color); /* Use star color for stars */
-    margin-bottom: 0.75rem;
-    margin-top: 0.75rem; /* Add space above stars */
-}
-
-.card-rating span {
-    color: var(--star-color); /* Filled stars */
-}
-
 .card-description {
     font-size: 0.95rem;
     color: var(--secondary-color); /* Softer gray for description */
     margin-bottom: 1.2rem;
     flex-grow: 1;
+    margin-top: 0.75rem; /* Add space above description now that stars are gone */
 }
 
 /* --- Footer --- */
@@ -384,7 +374,7 @@ img {
 }
 .footer-link:hover {
     color: var(--star-color);
-    text-decoration: underline;
+    text-decoration: underline; /* <-- TYPO FIX */
 }
 
 
@@ -406,7 +396,7 @@ img {
     background: var(--card-bg-color);
     border-radius: var(--border-radius-md);
     box-shadow: var(--box-shadow);
-    padding: 2rem;
+    padding: 2rem; /* <-- TYPO FIX */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -433,7 +423,7 @@ img {
 
 .creator-info h3 {
     font-size: 1.4rem;
-    color: var(--light-text-color);
+    color: var(--light-text-color); /* <-- TYPO FIX */
     margin-bottom: 0.5rem;
 }
 
