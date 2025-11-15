@@ -215,8 +215,31 @@ img {
     font-size: 8rem; /* Larger, more impactful text */
     font-weight: 900; /* Ultra bold */
     margin-bottom: 0.5rem;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
-    color: var(--light-text-color); /* Corrected to white */
+    
+    /* --- NEW 'Shine' Effect --- */
+    /* 1. Create a gradient of white and yellow */
+    background: linear-gradient(
+        90deg, 
+        var(--star-color), 
+        var(--light-text-color), 
+        var(--star-color)
+    );
+    /* 2. Make the background 200% wide so we can move it */
+    background-size: 200% auto;
+    
+    /* 3. Clip the background to the text */
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari/Chrome prefix */
+    
+    /* 4. Make the text color transparent to show the gradient */
+    color: transparent;
+    
+    /* 5. Add the animation */
+    animation: shine-animation 4s linear infinite;
+
+    /* 6. Use a drop-shadow for a better "glow" than text-shadow */
+    text-shadow: none; /* Remove old shadow */
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.7));
 }
 
 /* --- Featured Spots Section --- */
@@ -455,4 +478,11 @@ img {
     .section-title {
         font-size: 2rem;
     }
+}
+
+/* --- Animation for Hero Text --- */
+@keyframes shine-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
