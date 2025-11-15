@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-See - Discover Quezon City</title>
+    
+    <!-- This links your CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- This adds the search icon (requires internet) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-left">
+                <a href="index.html" class="site-logo">Q-See</a>
+            </div>
+            <div class="nav-right">
+                <a href="creators.html" class="nav-link">Creators</a>
+                <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <!-- Hero Section with Background Video -->
+    <section class="hero-section">
+        <video autoplay muted loop id="hero-video">
+            <!-- This points to your uploaded video -->
+            <source src="Quezon_City_Hero_Background_Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Quezon City</h1>
+        </div>
+    </section>
+
+    
+    <!-- Featured Spots Section -->
+    <section id="featured" class="featured-spots">
+        <div class="container">
+            <h2 class="section-title">FEATURED SPOTS</h2>
+            
+            <div class="spots-gallery">
+                
+                <!-- Card 1: Quezon Memorial Circle -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic1.png" alt="Quezon Memorial Circle">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">Quezon Memorial Circle</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">The iconic heart of the city, perfect for biking, picnics, and museums.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 2: Quezon Heritage House -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic2.png" alt="Quezon Heritage House">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">Quezon Heritage House</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">A restored pre-war home offering a glimpse into President Quezon's life.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 3: La Mesa Eco Park -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic3.png" alt="La Mesa Eco Park">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">La Mesa Eco Park</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">A nature reserve and public park. Go swimming, hiking, or just relax by the water.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 4: Bantayog ng Mga Bayani -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic4.png" alt="Bantayog ng Mga Bayani">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">Bantayog ng Mga Bayani</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">A monument and museum honoring the heroes who fought during martial law.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 5: EDSA Shrine -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic5.png" alt="EDSA Shrine">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">EDSA Shrine</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">A monument dedicated to the People Power Revolution that toppled a dictatorship.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 6: UP Diliman -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic6.png" alt="University of the Philippines Diliman">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">UP Diliman Campus Tour</h3>
+                        <div class="card-rating">
+                            <span>★★★★★</span>
+                        </div>
+                        <p class="card-description">Explore the sprawling campus, home to iconic art, museums, and food stalls.</p>
+                    </div>
+                </article>
+                
+                
+                <!-- Card 7: Ninoy Aquino Parks and Wildlife Center -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic7.png" alt="Ninoy Aquino Parks and Wildlife Center">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">Ninoy Aquino Parks & Wildlife</h3>
+                        <div class="card-rating">
+                            <span>★★★</span>☆☆
+                        </div>
+                        <p class="card-description">A rescue and rehabilitation center for animals, set in a lush, green park.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 8: Art in Island -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic8.png" alt="Art in Island">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">Art in Island 3D Museum</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">Get inside the art at this massive 3D interactive museum. Perfect for photos!</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 9: AFP Museum -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic9.png" alt="Armed Forces of the Philippines Museum">
+                    </div>
+                    <div class="spot-info">
+                        <h3 class="card-title">AFP Museum</h3>
+                        <div class="card-rating">
+                            <span>★★★</span>☆☆
+                        </div>
+                        <p class="card-description">Explore military history, vintage uniforms, and equipment at this museum.</p>
+                    </div>
+                </article>
+
+                
+                <!-- Card 10: Ateneo Art Gallery -->
+                <article class="spot-card">
+                    <div class="card-image">
+                        <img src="images/pic10.png" alt="Ateneo Art Gallery">
+                    </div>
+                    <div class="spot-info"> <!-- TYPO FIX WAS HERE -->
+                        <h3 class="card-title">Ateneo Art Gallery</h3>
+                        <div class="card-rating">
+                            <span>★★★★</span>☆
+                        </div>
+                        <p class="card-description">A premier museum for modern Philippine art, located in the Ateneo de Manila University.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Q-See. All rights reserved. | <a href="creators.html" class="footer-link">Meet the Creators</a></p>
+            <p>Made with ❤️ in Quezon City.</p>
+        </div>
+    </footer>
+
+    
+    <!-- Your JavaScript file (if you add any interactivity) -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
