@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q-See - Discover Quezon City</title>
     
-    <!-- This links your CSS file -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
     
-    <!-- This adds the search icon (requires internet) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     
-    <!-- Navigation Bar -->
     <nav class="main-nav">
         <div class="container">
             <div class="nav-left">
@@ -28,10 +25,8 @@
     </nav>
 
     
-    <!-- Hero Section with Background Video -->
     <section class="hero-section">
         <video autoplay muted loop id="hero-video">
-            <!-- This points to your uploaded video -->
             <source src="Quezon_City_Hero_Background_Video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -41,17 +36,18 @@
     </section>
 
     
-    <!-- Featured Spots Section -->
     <section id="featured" class="featured-spots">
         <div class="container">
             <h2 class="section-title">FEATURED SPOTS</h2>
             
             <div class="spots-gallery">
                 
-                <!-- Card 1: Quezon Memorial Circle -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-1">
                     <div class="card-image">
                         <img src="images/pic1.png" alt="Quezon Memorial Circle">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">Quezon Memorial Circle</h3>
@@ -60,10 +56,12 @@
                 </article>
 
                 
-                <!-- Card 2: Quezon Heritage House -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-2">
                     <div class="card-image">
                         <img src="images/pic2.png" alt="Quezon Heritage House">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">Quezon Heritage House</h3>
@@ -72,10 +70,12 @@
                 </article>
 
                 
-                <!-- Card 3: La Mesa Eco Park -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-3">
                     <div class="card-image">
                         <img src="images/pic3.png" alt="La Mesa Eco Park">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">La Mesa Eco Park</h3>
@@ -84,10 +84,12 @@
                 </article>
 
                 
-                <!-- Card 4: Bantayog ng Mga Bayani -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-4">
                     <div class="card-image">
                         <img src="images/pic4.png" alt="Bantayog ng Mga Bayani">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">Bantayog ng Mga Bayani</h3>
@@ -96,10 +98,12 @@
                 </article>
 
                 
-                <!-- Card 5: EDSA Shrine -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-5">
                     <div class="card-image">
                         <img src="images/pic5.png" alt="EDSA Shrine">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">EDSA Shrine</h3>
@@ -108,10 +112,12 @@
                 </article>
 
                 
-                <!-- Card 6: UP Diliman -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-6">
                     <div class="card-image">
                         <img src="images/pic6.png" alt="University of the Philippines Diliman">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">UP Diliman Campus Tour</h3>
@@ -120,10 +126,12 @@
                 </article>
                 
                 
-                <!-- Card 7: Ninoy Aquino Parks and Wildlife Center -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-7">
                     <div class="card-image">
                         <img src="images/pic7.png" alt="Ninoy Aquino Parks and Wildlife Center">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">Ninoy Aquino Parks & Wildlife</h3>
@@ -132,10 +140,12 @@
                 </article>
 
                 
-                <!-- Card 8: Art in Island -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-8">
                     <div class="card-image">
                         <img src="images/pic8.png" alt="Art in Island">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">Art in Island 3D Museum</h3>
@@ -144,10 +154,12 @@
                 </article>
 
                 
-                <!-- Card 9: AFP Museum -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-9">
                     <div class="card-image">
                         <img src="images/pic9.png" alt="Armed Forces of the Philippines Museum">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
                     <div class="spot-info">
                         <h3 class="card-title">AFP Museum</h3>
@@ -156,12 +168,14 @@
                 </article>
 
                 
-                <!-- Card 10: Ateneo Art Gallery -->
-                <article class="spot-card">
+                <article class="spot-card" data-spot-id="spot-10">
                     <div class="card-image">
                         <img src="images/pic10.png" alt="Ateneo Art Gallery">
+                        <div class="card-image-overlay">
+                            <span>View Details</span>
+                        </div>
                     </div>
-                    <div class="spot-info"> <!-- TYPO FIX WAS HERE -->
+                    <div class="spot-info"> 
                         <h3 class="card-title">Ateneo Art Gallery</h3>
                         <p class="card-description">A premier museum for modern Philippine art, located in the Ateneo de Manila University.</p>
                     </div>
@@ -170,16 +184,37 @@
         </div>
     </section>
     
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Q-See. All rights reserved. | <a href="creators.html" class="footer-link">Meet the Creators</a></p>
+            <p>© 2025 Q-See. All rights reserved. | <a href="creators.html" class="footer-link">Meet the Creators</a></p>
             <p>Made with ❤️ in Quezon City.</p>
         </div>
     </footer>
 
     
-    <!-- Your JavaScript file (if you add any interactivity) -->
+    <div id="spot-modal-overlay">
+        <div id="spot-modal-content">
+            
+            <div id="spot-modal-header">
+                <img id="spot-modal-img" src="images/pic1.png" alt="Spot Image">
+                <h2 id="spot-modal-title">Quezon Memorial Circle</h2>
+            </div>
+            
+            <div id="spot-modal-body">
+                <p id="spot-modal-desc">This is the long description...</p>
+                
+                <h3>Details</h3>
+                <ul id="spot-modal-details-list">
+                    <li><strong>Type:</strong> Monument, Park</li>
+                    <li><strong>Fee(s):</strong> FREE</li>
+                </ul>
+            </div>
+            
+            <div id="spot-modal-footer">
+                <a id="spot-modal-map-btn" href="#" target="_blank" class="modal-button">View on Google Maps</a>
+            </div>
+        </div>
+    </div>
     <script src="scripts/script.js"></script>
 </body>
 </html>
